@@ -1,0 +1,39 @@
+<a routerLink="../../houses"  routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">--Volver</a>
+<div *ngIf="housesDetails">
+  <div class="pic">
+    <div class="cuadraditos">
+      <img width="100" src="{{ housesDetails.logoURL }}" />
+      <h2>
+        {{ housesDetails.name }}
+      </h2>
+    </div>
+  </div>
+  <div class="cuadrado">
+    <div class="cuadritos">
+      <h2>LEMA</h2>
+      <h4>{{ housesDetails.sigil }}</h4>
+    </div>
+    <div class="cuadritos">
+      <h2>SEDE</h2>
+      <h4>{{ housesDetails.region }}</h4>
+    </div>
+    <div class="cuadritos">
+      <h2>RELIGION</h2>
+      <h4>
+        {{ housesDetails.region }}
+      </h4>
+    </div>
+    <div class="cuadritos">
+      <h2>ALIANZAS</h2>
+      <h4>{{ housesDetails.allegiance }}</h4>
+    </div>
+    <div class="cuadritos">
+      <h2>RELIGIONES</h2>
+      <h4>{{ housesDetails.religion }}</h4>
+    </div>
+    <div class="cuadritos">
+      <h2>FUNDACIÓN</h2>
+      <h4>{{ housesDetails.createdAt }}</h4>
+    </div>
+  </div>
+</div>

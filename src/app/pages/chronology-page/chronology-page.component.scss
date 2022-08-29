@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    align-items:center;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.personajesCronologyList{
+    display: flex;
+    align-items: center; 
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 665px;
+    width: 2560px;
+    max-height: 200ch;
+    max-width: 200ch;
+    padding: 50px 0 50px 150px;
+    border-radius: 6px;
+    margin: 0;
+    .personajes{
+        background-color: black;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+.personajesCronologyList::-webkit-scrollbar{
+    width: 0;
+}

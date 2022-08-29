@@ -1,0 +1,44 @@
+.mayor{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.buton{
+    height: 50px;
+    border: solid 3px var(--white);
+}
+.personajes{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    border-top: 1px solid white;
+
+    h2{
+        padding: 0;
+        margin: 0;
+        border: 0;
+        font-size: 15px;
+    }
+    img{
+        width: 120px;
+        height: 100px;
+        border-radius: 100%;
+    }
+    
+}
+
+.personajes2:nth-child(odd){
+    margin-left: calc(50% + 20px);
+    border-left: 1px solid white;
+}
+.personajes2:nth-child(even){
+    margin-left: calc(50% - 372px);
+    border-right: 1px solid white;
+}

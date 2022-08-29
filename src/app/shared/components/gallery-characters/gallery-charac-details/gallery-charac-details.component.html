@@ -1,0 +1,38 @@
+<a routerLink="../../characters"  routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><--Volver</a>
+<div *ngIf="nameDetails">
+  <div class="pic">
+    <img width="100" src="{{ nameDetails.image }}" />
+    <h2 class="nombre">
+      {{ nameDetails.name }}
+    </h2>
+  </div>
+  <div class="cuadrado">
+    <div class="cuadritos">
+      <h2>CASA</h2>
+      <h4 class="cuadrines">{{ nameDetails.house }}</h4>
+    </div>
+    <div class="cuadritos">
+      <h2>ALIANZAS</h2>
+      <h5 *ngFor="let allegiance of nameDetails.allegiances" class="cuadrines" >{{ allegiance }}</h5>
+    </div>
+    <div class="cuadritos">
+      <h2>APARICIONES</h2>
+      <h5 *ngFor="let appearance of nameDetails.appearances" class="cuadrines" >{{ appearance }}</h5>
+    </div>
+    <div class="cuadritos">
+      <div>
+      <h2>PADRES</h2>
+      <h4 class="cuadrines" >{{ nameDetails.father }}</h4>
+    </div>
+      <!-- <h5 *ngFor="let father of nameDetails.father" class="cuadrines" >{{ father }}</h5> -->
+    </div >
+    <div class="cuadritos">
+      <h2>DESCENDIENTES</h2>
+      <h5 *ngFor="let sibling of nameDetails.siblings" class="cuadrines" >{{ sibling }}</h5>
+    </div>
+    <div class="cuadritos">
+      <h2>TÍTULOS</h2>
+      <h5 *ngFor="let title of nameDetails.titles" class="cuadrines" >{{ title }}</h5>
+    </div>
+  </div>
+</div>

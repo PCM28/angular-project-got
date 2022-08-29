@@ -1,0 +1,13 @@
+<!-- <app-header></app-header> -->
+<body>
+  <div class="form__group">
+    
+    <input type="input" class="form__field" placeholder="pon un nombre" name="name" id='name' required />
+    <label for="name" class="form__label" >Buscar...</label>
+   
+  </div>
+  
+  <div class="personajesList">
+    <app-gallery-characters class="personajes" [list]="characters"></app-gallery-characters>
+  </div>
+</body>

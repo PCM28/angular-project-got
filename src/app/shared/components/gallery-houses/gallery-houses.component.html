@@ -1,0 +1,5 @@
+<div routerLink="/houses/{{item.name}}" class="houses" *ngFor="let item of list" >
+    <img *ngIf="item.logoURL" src="{{item.logoURL}}" >
+    <img *ngIf="!item.logoURL" src="{{defaultImage}}" > 
+    <h2>{{ item.name }}</h2>
+</div>
