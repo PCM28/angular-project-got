@@ -4,11 +4,24 @@
     justify-items: center;
     justify-content: center;
     flex-direction: column;
+    
+
 }
 .buton{
     height: 50px;
     border: solid 3px var(--white);
+    cursor: pointer;
 }
+.elipse{
+    width: 60px;
+    height: 60px;
+    padding: 13px 16px 14px;
+    border: solid 3px white;
+    border-radius: 50%;
+    margin-right: 60px;
+
+} 
+
 .personajes{
     display: flex;
     align-items: center;
@@ -18,17 +31,20 @@
     position: relative;
     box-sizing: border-box;
     transition: all 0.3s ease-in-out;
-    border-top: 1px solid white;
+    border-top: 2px solid white;
+    padding: 38px;
 
     h2{
         padding: 0;
         margin: 0;
         border: 0;
-        font-size: 15px;
+        font-size: 12px;
+
     }
     img{
+        padding-top: 10px;
         width: 120px;
-        height: 100px;
+        height: 120px;
         border-radius: 100%;
     }
     
@@ -36,9 +52,19 @@
 
 .personajes2:nth-child(odd){
     margin-left: calc(50% + 20px);
-    border-left: 1px solid white;
+    border-left: 2px solid white;
 }
 .personajes2:nth-child(even){
     margin-left: calc(50% - 372px);
-    border-right: 1px solid white;
+    border-right: 2px solid white;
+}
+
+.arrow{
+align-items: center;
+padding-left: 15px;
+padding-top: 14px;
+  img{
+    height: 19px;
+    width: 14px;
+  }
 }
