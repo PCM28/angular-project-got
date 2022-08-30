@@ -10,7 +10,7 @@ export class GalleryHousesComponent implements OnInit {
   @Input() list: any;
 
   constructor() { 
-    this.defaultImage ='https://img.europapress.es/fotoweb/fotonoticia_20190210130713_1200.jpg';
+    this.defaultImage ='https://i2.wp.com/clipset.com/wp-content/uploads/2016/01/game-of-thrones.jpg?fit=1024%2C576&ssl=1';
   }
 
   ngOnInit(): void {

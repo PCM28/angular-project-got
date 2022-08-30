@@ -1,4 +1,20 @@
-<a routerLink="../../characters"  routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><--Volver</a>
+<div class="jeje">
+  <a routerLink="../../characters"
+    ><img
+      class="flecha"
+      src="../../../../assets/images/flecha.png"
+      width="45px"
+  /></a>
+  <a
+    class="volviendo"
+    routerLink="../../characters"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Volver</a
+  >
+</div>
+
+
 <div *ngIf="nameDetails">
   <div class="pic">
     <img width="100" src="{{ nameDetails.image }}" />
