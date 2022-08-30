@@ -66,3 +66,29 @@
     width: 100%;
     align-items: center;
 }
+.flecha {
+    float: left;
+    margin: 10px;
+    padding-top: 20px;
+    text-decoration: none;
+    align-items: flex-end;
+  }
+  .jeje {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 300px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items:flex-end;
+    padding: -10px;
+  }
+  .volviendo {
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+  }
