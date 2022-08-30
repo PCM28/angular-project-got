@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CharactersService } from 'src/app/shared/services/characters.service';
+import { HousesService } from 'src/app/shared/services/houses.service';
 
 @Component({
   selector: 'app-gallery-charac-details',
@@ -10,8 +11,11 @@ import { CharactersService } from 'src/app/shared/services/characters.service';
 export class GalleryCharacDetailsComponent implements OnInit {
 
   nameDetails:any
+  housesDetails:any
 
-  constructor(private route: ActivatedRoute, private  charactersService: CharactersService) { }
+  constructor(private route: ActivatedRoute, private  charactersService: CharactersService, private housesServices: HousesService) { 
+    
+  }
 
   ngOnInit(): void {
    this.route.paramMap.subscribe((params) => {
@@ -21,6 +25,10 @@ export class GalleryCharacDetailsComponent implements OnInit {
         console.log(res);
       }
       )
+      this.housesServices.getHouses().subscribe((res: any) => {
+        this.housesDetails=res;
+        console.log(this.housesDetails);
     })
+  })
   }
 }
