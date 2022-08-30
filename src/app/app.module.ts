@@ -14,6 +14,7 @@ import { GalleryCharacDetailsComponent } from './shared/components/gallery-chara
 import { GalleryHousesDetailsComponent } from './shared/components/gallery-houses/gallery-houses-details/gallery-houses-details.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { GalleryCharactersCronologyComponent } from './shared/components/gallery-characters-cronology/gallery-characters-cronology.component';
+import { SimplebarAngularModule } from 'simplebar-angular';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { GalleryCharactersCronologyComponent } from './shared/components/gallery
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    SimplebarAngularModule
   ],
   providers: [],
   bootstrap: [AppComponent]
