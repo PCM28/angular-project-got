@@ -1,10 +1,16 @@
+<body>
 <div class="mayor">
-    <div class="buton" (click)="ordenar()"><span class="Elipse-1">0</span></div>
+    
+    <div class="buton" (click)="ordenar()"><span class="elipse">0</span>
+    <div class="arrow"><img src="../../../../assets/images/arrow.png"></div>
+    </div>
     <div routerLink="/cronology/"  *ngFor="let item of list" class="personajes2">
         <div class="personajes">
             <h2>{{ item?.age?.age }}</h2>
             <h2>{{ item.name }}</h2>
             <img *ngIf="item.image" src="{{item.image}}" alt="{{item.house}}" >
+            <img *ngIf="!item.image" src="{{ defaultImage }}">
         </div> 
     </div>
 </div>
+</body>
