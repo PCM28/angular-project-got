@@ -82,10 +82,10 @@ $gray: #9b9b9b;
 .house {
   float: right;
   margin: 10px;
-
+  cursor: pointer;
 }
 .flags {
-   float: right;
-   margin: 10px;
-   padding-top: 10px;
+  position: relative;
+  border: none;
+  cursor: pointer;
 }

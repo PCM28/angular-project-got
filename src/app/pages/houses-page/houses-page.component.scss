@@ -22,7 +22,7 @@ body{
     max-width: 200ch;
     padding: 50px 0 50px 150px;
     border-radius: 6px;
-    margin: 0;
+    autoHide: false;
     .houses{
         background-color: black;
         display: flex;
@@ -30,6 +30,10 @@ body{
         width: 100%;
     }
 }
-.casasList::-webkit-scrollbar{
-    width: 0;
-}
+// .simplebar-scrollbar::before{
+//     width: 0;
+// }
+
+// .casasList::-webkit-scrollbar{
+//     width: 0;
+// }
