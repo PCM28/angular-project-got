@@ -19,6 +19,7 @@
     border: solid 3px white;
     border-radius: 50%;
     margin-right: 60px;
+    margin-bottom: 210px;
 
 } 
 
@@ -33,6 +34,7 @@
     transition: all 0.3s ease-in-out;
     border-top: 2px solid white;
     padding: 38px;
+    margin-top: 20px;
 
     h2{
         padding: 0;
@@ -57,6 +59,7 @@
 .personajes2:nth-child(even){
     margin-left: calc(50% - 372px);
     border-right: 2px solid white;
+    margin-top: 8px;
 }
 
 .arrow{
