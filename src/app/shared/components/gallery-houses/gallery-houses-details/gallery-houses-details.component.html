@@ -17,7 +17,11 @@
 <div *ngIf="housesDetails">
   <div class="pic">
     <div class="cuadraditos">
-      <img width="100" src="{{ housesDetails.logoURL }}" />
+      <img *ngIf="housesDetails.logoURL" src="{{ housesDetails.logoURL }}" />
+      <img
+        *ngIf="!housesDetails.logoURL"
+        src="https://i2.wp.com/clipset.com/wp-content/uploads/2016/01/game-of-thrones.jpg?fit=1024%2C576&ssl=1"
+      />
       <h2>
         {{ housesDetails.name }}
       </h2>
