@@ -10,14 +10,12 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent {
   title = 'Angular-GOT-proyect';
   current: string = "";
-  constructor(private router:Router, public translate: TranslateService){
+  constructor(private router:Router){
     this.router.events.subscribe((event: Event) => {        
       if (event instanceof NavigationEnd) {           
          this.current= event.url;              
          console.log(event);        
       }});
 
-    translate.addLangs(['es','en']);
-    translate.setDefaultLang('es');
-  }
+    }
 }

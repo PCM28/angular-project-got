@@ -1,14 +1,8 @@
 <footer>
     <a routerLink="characters" class="footers-btn" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{'HOME.ONE' | translate}}</a>
     <!-- Personajes -->
-    <a routerLink="houses" class="footers-btn" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{HOME.TWO | translate}}</a>
+    <a routerLink="houses" class="footers-btn" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ 'HOME.TWO' | translate}}</a>
     <!-- Casas -->
-    <a routerLink="chronology" class="footers-btn" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{HOME.THREE | translate}}</a>
+    <a routerLink="chronology" class="footers-btn" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{'HOME.THREE' | translate}}</a>
     <!-- Cronologia -->
-    <label for="">
-        {{ 'HOME.SELECT' | translate }}
-        <select #langselect (change)="translate.use(langselect.value)">
-            <option *ngFor="let lang of translate.getLangs()" [value]="lang">{{lang}}</option>
-        </select>
-    </label>
 </footer>
