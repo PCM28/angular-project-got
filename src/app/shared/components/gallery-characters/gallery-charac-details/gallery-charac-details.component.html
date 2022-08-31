@@ -26,11 +26,10 @@
       <h2>CASA</h2>
       <div *ngFor="let item of housesDetails">
         <img
+          class="casa"
           *ngIf="nameDetails.house === item.name"
           src="{{ item['logoURL'] }}"
         />
-        
-
       </div>
       <!-- <h4 class="cuadrines">{{ nameDetails.house }}</h4> -->
     </div>
