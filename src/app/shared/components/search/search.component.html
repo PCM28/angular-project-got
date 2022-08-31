@@ -1,0 +1,13 @@
+<div class="form__group">
+    <input class="form__field" type="text" (keyup)="applyFilter($event)" placeholder="Buscar..." autofocus>
+    <label for="name" class="form__label" >{{'HOME.EIGHTEEN' | translate }}</label>
+
+</div>
+
+
+
+<app-gallery-characters
+*ngFor="let character of filteredCharacters"
+[image]="character.image"
+[name]="character.name"
+></app-gallery-characters>

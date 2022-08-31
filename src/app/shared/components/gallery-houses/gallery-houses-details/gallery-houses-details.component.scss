@@ -14,8 +14,8 @@
     padding: 50px;
     text-align: center;
     align-items: center;
-    overflow-y: auto;
-    max-width: 150px;
+ /*    overflow-y: auto; */
+
     max-height: 300px;
     padding-top: 20px;
 }
@@ -31,20 +31,20 @@
     // overflow-y:scroll;
     
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 8px;
     max-height: 0px;
     height: 1px;
   }
 ::-webkit-scrollbar-thumb {
-    background-color: whitesmoke;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
+    background-color: whitesmoke;   
+    border-radius: 20px;  
     border: 3px solid black;
   }
   ::-webkit-scrollbar-thumb:hover{
     background-color:grey;
     transform: scale(1.4); 
-  }
+  } */
   
 .pic{
     width: 100%;
@@ -68,10 +68,11 @@
     align-items: center;
 }
 .flecha {
-    float: left;
-    margin: 10px;
-    padding-top: 20px;
-    text-decoration: none;
+  float: left;
+  margin: 10px;
+  padding-top: 20px;
+  text-decoration: none;
+  align-items: flex-end;
   }
   .jeje {
     display: flex;
@@ -81,7 +82,7 @@
     text-decoration: none;
     text-align: center;
     justify-content: center;
-    align-items: center;
+    align-items:flex-end;
     padding: -10px;
   }
   .volviendo {
@@ -90,4 +91,19 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 25px;
+  }
+
+  .casasList2{
+    display: flex;
+    align-items: center; 
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 250px;
+    // max-height: 200ch;
+    // max-width: 200ch;
+    padding: 0 0 50px 150px;
+    border-radius: 6px;
   }

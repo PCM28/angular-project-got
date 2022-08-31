@@ -7,7 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class GalleryCharactersComponent implements OnInit {
   public defaultImage: string;
-  
+  @Input() image = '';
+  @Input() name = '';
   @Input() list: any;
  
   constructor() {
