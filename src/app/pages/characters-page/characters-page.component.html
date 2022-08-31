@@ -1,13 +1,18 @@
 <!-- <app-header></app-header> -->
 <body>
+<!--   <app-search></app-search> -->
   <div class="form__group">
     
     <input type="input" class="form__field" placeholder="pon un nombre" name="name" id='name' required />
     <label for="name" class="form__label" >{{'HOME.EIGHTEEN' | translate }}</label>
    
   </div>
-  
-  <div class="personajesList">
+<!--   <div class="personajesList"> -->
+
+    <div style="height: 730px">
+      <ngx-simplebar data-simplebar-auto-hide="false" class="personajesList" width="100%" height="300px">
     <app-gallery-characters class="personajes" [list]="characters"></app-gallery-characters>
+  </ngx-simplebar>
   </div>
+
 </body>

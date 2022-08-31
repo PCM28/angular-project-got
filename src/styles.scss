@@ -3,7 +3,7 @@
   border-radius: 20px;
   // border: 3px solid whitesmoke;
   margin: 55px 0 29px 23px;
-  padding: 0 0 707.7px;
+  padding: 0 0 75px;
   border-radius: 10px;
   background-color: #443d3d;
 }
@@ -18,6 +18,25 @@ body {
 font-face {
   font-family: GameofThrones;
   src: url(assets/fonts/GameofThrones.ttf) format("truetype");
+  font-style: normal;
+h2{
+  font-family: GameofThrones;
+  src: url(assets/fonts/GameofThrones.ttf) format("truetype");
+  font-style: normal;
+}h5{
+  font-family: GameofThrones;
+  src: url(assets/fonts/GameofThrones.ttf) format("truetype");
+  font-style: normal;
+}h4{
+  font-family: GameofThrones;
+  src: url(assets/fonts/GameofThrones.ttf) format("truetype");
+  font-style: normal;
+}p{
+  font-family: GameofThrones;
+  src: url(assets/fonts/GameofThrones.ttf) format("truetype");
+  font-style: normal;
+}
+
 }
 
 // ESTO ES CÓDIGO DEL BUSCADOR HASTA LA ÚLTIMA LÍNEA
@@ -35,7 +54,6 @@ $gray: #9b9b9b;
 }
 
 .form__field {
-  font-family: inherit;
   width: 100%;
   border: 0;
   border-bottom: 2px solid $gray;

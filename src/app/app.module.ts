@@ -1,3 +1,4 @@
+import { SearchComponent } from './shared/components/search/search.component';
 import { GalleryHousesComponent } from './shared/components/gallery-houses/gallery-houses.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -36,6 +37,7 @@ export function HttpLoaderFactory(http: HttpClient){
     GalleryHousesDetailsComponent,
     GalleryCharactersCronologyComponent,
     HeaderComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
