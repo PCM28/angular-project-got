@@ -10,8 +10,9 @@
     routerLink="../../characters"
     routerLinkActive="active"
     [routerLinkActiveOptions]="{ exact: true }"
-    >Volver</a
+    >{{'HOME.FOUR' | translate}}</a
   >
+  <!-- Volver -->
 </div>
 
 
@@ -24,30 +25,36 @@
   </div>
   <div class="cuadrado">
     <div class="cuadritos">
-      <h2>CASA</h2>
+      <h2>{{'HOME.FIVE' | translate}}</h2>
+      <!-- CASA -->
       <h4 class="cuadrines">{{ nameDetails.house }}</h4>
     </div>
     <div class="cuadritos">
-      <h2>ALIANZAS</h2>
+      <h2>{{'HOME.SIX' | translate}}</h2>
+      <!-- ALIANZAS -->
       <h5 *ngFor="let allegiance of nameDetails.allegiances" class="cuadrines" >{{ allegiance }}</h5>
     </div>
     <div class="cuadritos">
-      <h2>APARICIONES</h2>
+      <h2>{{'HOME.SEVEN' | translate}}</h2>
+      <!-- APARICIONES -->
       <h5 *ngFor="let appearance of nameDetails.appearances" class="cuadrines" >{{ appearance }}</h5>
     </div>
     <div class="cuadritos">
       <div>
-      <h2>PADRES</h2>
+      <h2>{{'HOME.EIGHT' | translate}}</h2>
+      <!-- PADRES -->
       <h4 class="cuadrines" >{{ nameDetails.father }}</h4>
     </div>
       <!-- <h5 *ngFor="let father of nameDetails.father" class="cuadrines" >{{ father }}</h5> -->
     </div >
     <div class="cuadritos">
-      <h2>DESCENDIENTES</h2>
+      <h2>{{'HOME.NINE' | translate}}</h2>
+      <!-- DESCENDIENTES -->
       <h5 *ngFor="let sibling of nameDetails.siblings" class="cuadrines" >{{ sibling }}</h5>
     </div>
     <div class="cuadritos">
-      <h2>TÍTULOS</h2>
+      <h2>{{'HOME.TEN' | translate}}</h2>
+      <!-- TÍTULOS -->
       <h5 *ngFor="let title of nameDetails.titles" class="cuadrines" >{{ title }}</h5>
     </div>
   </div>

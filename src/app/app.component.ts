@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Event, NavigationEnd, Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -9,11 +10,14 @@ import { Event, NavigationEnd, Router } from '@angular/router';
 export class AppComponent {
   title = 'Angular-GOT-proyect';
   current: string = "";
-  constructor(private router:Router){
+  constructor(private router:Router, public translate: TranslateService){
     this.router.events.subscribe((event: Event) => {        
       if (event instanceof NavigationEnd) {           
          this.current= event.url;              
          console.log(event);        
       }});
+
+    translate.addLangs(['es','en']);
+    translate.setDefaultLang('es');
   }
 }

@@ -10,8 +10,9 @@
     routerLink="../../houses"
     routerLinkActive="active"
     [routerLinkActiveOptions]="{ exact: true }"
-    >Volver</a
+    >{{'HOME.ELEVEN' | translate}} </a
   >
+  <!-- Volver -->
 </div>
 
 <div *ngIf="housesDetails">
@@ -25,29 +26,35 @@
   </div>
   <div class="cuadrado">
     <div class="cuadritos">
-      <h2>LEMA</h2>
+      <h2>{{'HOME.TWELVE' | translate}}</h2>
+      <!-- LEMA -->
       <h4>{{ housesDetails.sigil }}</h4>
     </div>
     <div class="cuadritos">
-      <h2>SEDE</h2>
+      <h2>{{'HOME.THIRTEEN' | translate}}</h2>
+      <!-- SEDE -->
       <h4>{{ housesDetails.region }}</h4>
     </div>
     <div class="cuadritos">
-      <h2>RELIGION</h2>
+      <h2>{{'HOME.FOURTEEN' | translate}}</h2>
+      <!-- RELIGION -->
       <h4>
         {{ housesDetails.region }}
       </h4>
     </div>
     <div class="cuadritos">
-      <h2>ALIANZAS</h2>
+      <h2>{{'HOME.FIVETEEN' | translate}}</h2>
+      <!-- ALIANZAS -->
       <h4>{{ housesDetails.allegiance }}</h4>
     </div>
     <div class="cuadritos">
-      <h2>RELIGIONES</h2>
+      <h2>{{'HOME.SIXTEEN' | translate}}</h2>
+      <!-- RELIGIONES -->
       <h4>{{ housesDetails.religion }}</h4>
     </div>
     <div class="cuadritos">
-      <h2>FUNDACIÓN</h2>
+      <h2>{{'HOME.SEVENTEEN' | translate}}</h2>
+      <!-- FUNDACIÓN -->
       <h4>{{ housesDetails.createdAt }}</h4>
     </div>
   </div>
