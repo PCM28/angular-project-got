@@ -15,7 +15,6 @@
   <!-- Volver -->
 </div>
 
-
 <div *ngIf="nameDetails">
   <div class="pic">
     <img width="100" src="{{ nameDetails.image }}" />
@@ -25,37 +24,52 @@
   </div>
   <div class="cuadrado">
     <div class="cuadritos">
+=======
       <h2>{{'HOME.FIVE' | translate}}</h2>
       <!-- CASA -->
-      <h4 class="cuadrines">{{ nameDetails.house }}</h4>
+      <div *ngFor="let item of housesDetails">
+        <img
+          class="casa"
+          *ngIf="nameDetails.house === item.name"
+          src="{{ item['logoURL'] }}"
+        />
+      </div>
+      <!-- <h4 class="cuadrines">{{ nameDetails.house }}</h4> -->
     </div>
     <div class="cuadritos">
       <h2>{{'HOME.SIX' | translate}}</h2>
       <!-- ALIANZAS -->
-      <h5 *ngFor="let allegiance of nameDetails.allegiances" class="cuadrines" >{{ allegiance }}</h5>
+      <h5 *ngFor="let allegiance of nameDetails.allegiances" class="cuadrines">
+        {{ allegiance }}
+      </h5>
     </div>
     <div class="cuadritos">
       <h2>{{'HOME.SEVEN' | translate}}</h2>
       <!-- APARICIONES -->
-      <h5 *ngFor="let appearance of nameDetails.appearances" class="cuadrines" >{{ appearance }}</h5>
+      <h5 *ngFor="let appearance of nameDetails.appearances" class="cuadrines">
+        {{ appearance }}
+      </h5>
     </div>
     <div class="cuadritos">
       <div>
       <h2>{{'HOME.EIGHT' | translate}}</h2>
       <!-- PADRES -->
-      <h4 class="cuadrines" >{{ nameDetails.father }}</h4>
+        <h4 class="cuadrines">{{ nameDetails.father }}</h4>
+      </div>
     </div>
-      <!-- <h5 *ngFor="let father of nameDetails.father" class="cuadrines" >{{ father }}</h5> -->
-    </div >
     <div class="cuadritos">
       <h2>{{'HOME.NINE' | translate}}</h2>
       <!-- DESCENDIENTES -->
-      <h5 *ngFor="let sibling of nameDetails.siblings" class="cuadrines" >{{ sibling }}</h5>
+      <h5 *ngFor="let sibling of nameDetails.siblings" class="cuadrines">
+        {{ sibling }}
+      </h5>
     </div>
     <div class="cuadritos">
       <h2>{{'HOME.TEN' | translate}}</h2>
       <!-- TÍTULOS -->
-      <h5 *ngFor="let title of nameDetails.titles" class="cuadrines" >{{ title }}</h5>
+      <h5 *ngFor="let title of nameDetails.titles" class="cuadrines">
+        {{ title }}
+      </h5>
     </div>
   </div>
 </div>
