@@ -24,7 +24,6 @@
   </div>
   <div class="cuadrado">
     <div class="cuadritos">
-=======
       <h2>{{'HOME.FIVE' | translate}}</h2>
       <!-- CASA -->
       <div *ngFor="let item of housesDetails">
@@ -43,12 +42,19 @@
         {{ allegiance }}
       </h5>
     </div>
-    <div class="cuadritos">
+    <div style ="height:50px" class="cuadritos">
+      <ngx-simplebar
+      data-simplebar-auto-hide="false"
+      class="casasList2"
+      width="100%"
+      height="50px"
+    >
       <h2>{{'HOME.SEVEN' | translate}}</h2>
       <!-- APARICIONES -->
       <h5 *ngFor="let appearance of nameDetails.appearances" class="cuadrines">
         {{ appearance }}
       </h5>
+    </ngx-simplebar>
     </div>
     <div class="cuadritos">
       <div>
@@ -57,19 +63,33 @@
         <h4 class="cuadrines">{{ nameDetails.father }}</h4>
       </div>
     </div>
-    <div class="cuadritos">
+    <div style = "height:50px" class="cuadritos">
+      <ngx-simplebar
+      data-simplebar-auto-hide="false"
+      class="casasList2"
+      width="100%"
+      height="50px"
+    >
       <h2>{{'HOME.NINE' | translate}}</h2>
       <!-- DESCENDIENTES -->
       <h5 *ngFor="let sibling of nameDetails.siblings" class="cuadrines">
         {{ sibling }}
       </h5>
+    </ngx-simplebar>
     </div>
-    <div class="cuadritos">
+    <div style = "height:50px" class="cuadritos">
+      <ngx-simplebar
+      data-simplebar-auto-hide="false"
+      class="casasList2"
+      width="100%"
+      height="50px"
+    >
       <h2>{{'HOME.TEN' | translate}}</h2>
       <!-- TÍTULOS -->
       <h5 *ngFor="let title of nameDetails.titles" class="cuadrines">
         {{ title }}
       </h5>
+    </ngx-simplebar>
     </div>
   </div>
 </div>
