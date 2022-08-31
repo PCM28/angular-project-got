@@ -11,7 +11,10 @@ export class GalleryHousesDetailsComponent implements OnInit {
 
   housesDetails:any
 
-  constructor(private route: ActivatedRoute, private  housesService: HousesService) { }
+  constructor(private route: ActivatedRoute, private  housesService: HousesService) {
+    
+   }
+   
 
   ngOnInit(): void {
    this.route.paramMap.subscribe((params) => {
